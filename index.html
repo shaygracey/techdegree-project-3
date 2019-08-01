@@ -18,7 +18,6 @@
     <div class="signup">
     <h2>Signup for our newsletter</h2>
     <p>Get the latest news on how your code is doing right in your inbox!</p>
-    <hr>
     </div>
 
    <form action="html" method="POST">
@@ -27,27 +26,27 @@
 
             <div class="flexpair">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Required">
+            <input type="text" id="name" name="name" placeholder="Required" required>
             </div>
 
             <div class="flexpair">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="emailad" placeholder="Required">
+            <input type="email" id="email" name="emailad" placeholder="Required" required>
             </div>
 
             <div class="flexpair">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx">
             </div>
 
             <div class="flexpair">
             <label for="address">Street Address</label>
-            <input type="text" id="address" name="address">
+            <input type="text" id="address" name="address" placeholder="123 Code Ln">
             </div>
 
             <div class="flexpair">
             <label for="city">City</label>
-            <input type="text" id="city" name="city">
+            <input type="text" id="city" name="city" placeholder="e.g. San Francisco">
             </div>
 
             <div class="flexpair">
@@ -109,7 +108,7 @@
                 </div>
             
             <div class="flexpair">
-            <label for="zip">Zip Code</label>
+            <label for="zip" class="ziplabel">Zip Code</label>
             <input type="number" id="zip" name="zip">
             </div>
 
@@ -121,6 +120,7 @@
         <legend>Newsletter</legend> 
         <h3>Choose the newsletters you would like to receive:</h3>
 
+        <div class="options">
         <div class="flexpair">
         <label for="htmlnews">HTML News</label>
         <input type="checkbox" id="htmlnews" name="interest" value="interest_html">
@@ -147,14 +147,20 @@
         <label for="plaintext">Plain Text</label>
         <input type="radio" id="plaintext" value="format_plaintext" name="format">
         </div>
+         </div>
 
+         <div class="textarea">
         <label for="othertopics">Other topics you'd like to hear about:</label>
         <textarea id="othertopics" name="othertopics"></textarea>
+        </div>
 
         <button type="submit">Sign Up</button>
      
     </fieldset>
    </form> 
 </main>
+<footer>
+    <p>Copyright The Code Review</p>
+</footer>
 </body>
 </html>
